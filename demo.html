@@ -184,9 +184,10 @@
 			function hideTurkey(){
 				$('#turkeySection').hide(1000);
 			}
-			var voiceCommands = {'show me the turkey': showTurkey, 'hide the turkey': ''};
+			var voiceCommands = {'show me the turkey': showTurkey, 'hide the turkey': hideTurkey};
 			annyang.addCommands(voiceCommands);
 			annyang.start();
+			annyang.debug([newState=true]);
 		</script>
 
 	</body>
